@@ -1,0 +1,18 @@
+@import "../../common/Color.scss";
+.movieCard{
+    background-color: $primary-color;
+}
+h3,p{
+color:#fff;
+padding-left:20px;
+}
+p{
+    margin: 0 !important;
+    padding-bottom: 20px;
+}
+
+h3{
+    padding-top:5px;
+    padding-bottom: 3px;
+    margin: 0px;
+}
