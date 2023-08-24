@@ -1,28 +1,4 @@
-.container{
-  height:100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-a{text-decoration: none;}
-.quantity_plus, .quantity_minus{
-  font-size:30px;
-}
-.quantity{
-  margin-top: 40px;
-  background:rgb(191, 190, 190);
-display: flex;
-align-items: center;
-padding:10px 15px;
-gap:20px;
-}
-input{
-  background-color: white;
-  color:#000;
-  outline:none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  text-align: center;
+@import "./common/Color.scss";
+body{
+    background-color: $secondary-color;
 }

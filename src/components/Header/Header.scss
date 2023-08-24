@@ -1,0 +1,22 @@
+@import "../../common/Color.scss";
+.header{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+span{
+    color:$font-primary;
+    font-size: 20px;
+}
+#userIcon{
+    color:$primary-color;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding:5px;
+    background-color: $font-primary;
+}
+a{
+    text-decoration: none;
+}
