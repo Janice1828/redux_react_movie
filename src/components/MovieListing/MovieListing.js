@@ -5,9 +5,9 @@ import MovieCard from "../MovieCard/MovieCard";
 import "./MovieListing.scss"
 const MovieListing = () => {
   const movies=useSelector(getAllMovies);
-  console.log(movies);
+  
   let renderMovies="";
-  renderMovies=movies.Response==="True"?(movies.Search.map((movie,index)=>(<div className='col-12 col-md-6 col-xl-4 col-xxl-3'><MovieCard key={index} data={movie}/></div>))):<h3>Error</h3>;
+  renderMovies=movies.Response==="True"?(movies.Search.map((movie,index)=>(<div className='col-12 col-md-6 col-xl-4 col-xxl-3' key={index}><MovieCard data={movie}/></div>))):<h3>Error</h3>;
   return (
     <>    <div style={{cursor:"pointer"}}>
       <h2 className='movies'>Movies</h2>
