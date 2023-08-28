@@ -5,7 +5,7 @@ const MovieCard = (props) => {
   return (
     <div className='movieCard'>
       <img src={data.Poster} alt='Image'/>
-<h3>{data.Title}</h3>
+<h3 className='text-light'>{data.Title}</h3>
 <p>{data.Year}</p>
     </div>
   )

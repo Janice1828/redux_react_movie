@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer"
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import PageNotFount from "./components/PageNotFound/PageNotFound";
 import Home from './components/Home/Home';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 const App = () => {
   return (
     <div className='app'>

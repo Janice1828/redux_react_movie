@@ -7,12 +7,12 @@ const MovieListing = () => {
   const movies=useSelector(getAllMovies);
   console.log(movies);
   let renderMovies="";
-  renderMovies=movies.Response==="True"?(movies.Search.map((movie,index)=>(<MovieCard key={index} data={movie}/>))):<h3>Error</h3>;
+  renderMovies=movies.Response==="True"?(movies.Search.map((movie,index)=>(<div className='col-12 col-md-6 col-xl-4 col-xxl-3'><MovieCard key={index} data={movie}/></div>))):<h3>Error</h3>;
   return (
     <>    <div style={{cursor:"pointer"}}>
       <h2 className='movies'>Movies</h2>
-    <div className='moviesList'>  {renderMovies}</div>
-    </div>
+    <div className='moviesList row p-0 m-0 gy-3'> 
+     {renderMovies}</div></div>
     </>
 
   )
